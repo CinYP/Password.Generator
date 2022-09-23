@@ -71,6 +71,11 @@ console.log(lower, upper, number, symbol);
 let potentialPassword = "";
 let generatedPassword = "";
 
+if(length <8 || length> 128){
+  alert("Password needs to be between 8 and 128")
+  return;
+}
+
 if (lower){
   let singlelowerchar = randomFunctions.lower();
   potentialPassword += lowerchar
