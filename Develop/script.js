@@ -71,6 +71,7 @@ console.log(lower, upper, number, symbol);
 let potentialPassword = "";
 let generatedPassword = "";
 
+//This if statement ensures that the user inputs a password length larger than 8 but lower than 128
 if(length <8 || length> 128){
   alert("Password needs to be between 8 and 128")
   return;
