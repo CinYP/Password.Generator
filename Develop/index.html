@@ -25,27 +25,47 @@
           ></textarea>
         </div>
       </div>
-        <section>
-          <header>
+        <section class="criteria">
+          <header class="rqtheader">
             <h3>
              Please Select Password Requirements: 
             </h3>
           </header>
+         
+          <section>
+          <label for="lenght"> 
+                      Password lenght
+                    </label>
+          <input type="number" id="number" class= "pw-parameters" min="8" max="126">
+         </section>
 
-          <form class= "pw-parameters"id="charactersreqd"> 
-           Number of Characters Required: <input type="number" name="number" min="8" max="126">
-         </form>
+         <section>
+          <label>
+               Lowercase
+          </label>
+          <input type="checkbox" class="pw-parameters" id="lowerCase">
+         </section>
 
-          <checkbox>
-            <input type="checkbox" class="pw-parameters" id="lowerCase"> Lowercase 
-            <br>
-            <input type="checkbox" class="pw-parameters" id="upperCase"> Uppercase 
-            <br>
-           <input type="checkbox" class="pw-parameters" id="characterSpecial"> Special Characters
-           <br>
-           <input type="checkbox" class="pw-parameters" id="characterNumeric"> Numeric Value
-           <br>
-          </checkbox>
+         <section>
+          <label>
+             Uppercase
+          </label>
+          <input type="checkbox" class="pw-parameters" id="upperCase">
+         </section>
+
+         <section>
+          <label>
+             Special Characters
+          </label>
+          <input type="checkbox" class="pw-parameters" id="characterSpecial">
+         </section>
+
+         <section>
+          <label>
+           Include numbers
+          </label>
+          <input type="checkbox" class="pw-parameters" id="characterNumeric">
+         </section>
         
         </section>
         <section class="card-footer">
